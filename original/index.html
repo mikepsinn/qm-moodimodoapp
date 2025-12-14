@@ -46,13 +46,13 @@
     <div class="main-container">
         <header>
             <div class="header-inner clearfix">
-                <a id="logo" class="landing image-replacement" href="/">Quantimodo Home</a>
+                <a id="logo" class="landing image-replacement" href="/">Quantimodo</a>
                 <div class="invitation">
                     <form method="post" action="https://warondisease.org?source_ref=quantimodo" name="land_login"
                         id="land_login">
                         <div class="login-box">
                             <a class="register image-replacement"
-                                href="https://warondisease.org?source_ref=quantimodo">Register Now!</a>
+                                href="https://warondisease.org?source_ref=quantimodo">End War</a>
                             <input title="Email" autocorrect="off" autocapitalize="off" autocomplete="on"
                                 onkeypress="if(event.which==13) document.forms[0].submit();" id="f_username"
                                 name="f_username" placeholder="Email" value="" type="text" tabindex="1" />
@@ -65,7 +65,7 @@
                             <br />
                             <span class="forgot">Forgot your password?</span>
                             <a class="login image-replacement" href="https://warondisease.org?source_ref=quantimodo"
-                                tabindex="3">Login Now!</a>
+                                tabindex="3">End War</a>
                             <!-- <a id="loginShow" class="login image-replacement" href="#">Login Now!</a> -->
                             <!--a id="loginShowZomg" class="login image-replacement" href="#">Login Now!</a>
 						<a id="registerShowZomg" class="register image-replacement" href="#">Register Now!</a-->
@@ -186,3 +186,14 @@
 
     <script src="static/js/bootstrap-2.0.2.min.js"></script>
     <script type="text/javascript" src="js/welcome.js"></script>
+    <script type="text/javascript">
+        // Center horizontal scroll on page load
+        window.addEventListener('load', function() {
+            var pageWidth = 970; // Main container width
+            var viewportWidth = window.innerWidth;
+            if (viewportWidth < pageWidth) {
+                var scrollOffset = (pageWidth - viewportWidth) / 2;
+                window.scrollTo(scrollOffset, 0);
+            }
+        });
+    </script>
