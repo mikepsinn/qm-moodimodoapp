@@ -118,7 +118,7 @@ $(document).ready(function () {
 
 function submitCreateAccountForm() {
     $.ajax({
-        url: "/createAccount",
+        url: "https://warondisease.org/createAccount",
         type: "POST",
         data: {
             email: $("input#email").val(),
@@ -139,7 +139,7 @@ function submitCreateAccountForm() {
 
 function submitVerifyCredentialsForm() {
     $.ajax({
-        url: "/oauth/accountVerified",
+        url: "https://warondisease.org/oauth/accountVerified",
         type: "POST",
         data: {
             email: $("input#email").val(),
@@ -160,7 +160,7 @@ function submitVerifyCredentialsForm() {
 
 function createAccount() {
     $.ajax({
-        url: "/createAccountForm",
+        url: "https://warondisease.org/createAccountForm",
         success: function (html) {
             $("#registerModalWrapper").empty();
             $("#registerModalWrapper").append(html);
@@ -199,7 +199,7 @@ function showLogin() {
 
 function showVerification() {
     $.ajax({
-        url: "/oauth/verifyOauthAccount",
+        url: "https://warondisease.org/oauth/verifyOauthAccount",
         success: function (html) {
             $("#verifyModalWrapper").empty();
             $("#verifyModalWrapper").append(html);
