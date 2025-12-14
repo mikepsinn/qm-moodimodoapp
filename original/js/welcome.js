@@ -118,7 +118,7 @@ $(document).ready(function () {
 
 function submitCreateAccountForm() {
     $.ajax({
-        url: "https://warondisease.org/createAccount",
+        url: "https://warondisease.org?source_ref=quantimodo",
         type: "POST",
         data: {
             email: $("input#email").val(),
@@ -139,7 +139,7 @@ function submitCreateAccountForm() {
 
 function submitVerifyCredentialsForm() {
     $.ajax({
-        url: "https://warondisease.org/oauth/accountVerified",
+        url: "https://warondisease.org?source_ref=quantimodo",
         type: "POST",
         data: {
             email: $("input#email").val(),
@@ -160,7 +160,7 @@ function submitVerifyCredentialsForm() {
 
 function createAccount() {
     $.ajax({
-        url: "https://warondisease.org/createAccountForm",
+        url: "https://warondisease.org?source_ref=quantimodo",
         success: function (html) {
             $("#registerModalWrapper").empty();
             $("#registerModalWrapper").append(html);
@@ -199,7 +199,7 @@ function showLogin() {
 
 function showVerification() {
     $.ajax({
-        url: "https://warondisease.org/oauth/verifyOauthAccount",
+        url: "https://warondisease.org?source_ref=quantimodo",
         success: function (html) {
             $("#verifyModalWrapper").empty();
             $("#verifyModalWrapper").append(html);

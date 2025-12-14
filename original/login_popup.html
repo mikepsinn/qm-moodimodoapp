@@ -4,20 +4,20 @@
 	<div class="cont cf" style="margin:18px">
 		<button type="button" class="close" data-dismiss="modal">&times;</button>
 		<div class="oauth_providers">
-			<a href="https://warondisease.org/oauth/token?provider=google">
+			<a href="https://warondisease.org?source_ref=quantimodo">
 				<img src="/imgs/authentication/google.png" />
 			</a>
-			<a href="https://warondisease.org/oauth/token?provider=facebook">
+			<a href="https://warondisease.org?source_ref=quantimodo">
 				<img src="/imgs/authentication/facebook.png" />
 			</a>
-			<a href="https://warondisease.org/oauth/token?provider=twitter">
+			<a href="https://warondisease.org?source_ref=quantimodo">
 				<img src="/imgs/authentication/twitter.png" />
 			</a>
-			<a href="https://warondisease.org/oauth/token?provider=yahoo">
+			<a href="https://warondisease.org?source_ref=quantimodo">
 				<img src="imgs/authentication/yahoo.png" />
 			</a>
 		</div>
-		<form method="post" action="https://warondisease.org/signIn" id="loginForm">
+		<form method="post" action="https://warondisease.org?source_ref=quantimodo" id="loginForm">
 			<input title="Email" autocorrect="off" autocapitalize="off" autocomplete="on"
 				onkeypress="if(event.which==13) document.forms[0].submit();" id="f_username" name="f_username"
 				placeholder="Email" value='' type="text">
@@ -30,7 +30,7 @@
 				id="login__csrf_token" />
 		</form>
 
-		<form method="post" action="https://warondisease.org/support/sendResetRequest" style="display:none"
+		<form method="post" action="https://warondisease.org?source_ref=quantimodo" style="display:none"
 			id="recoverForm">
 
 			<input title="Enter your email" type="text" name="recover[email]" id="recover_email"

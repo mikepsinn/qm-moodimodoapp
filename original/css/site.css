@@ -267,7 +267,7 @@ input#loginShow{
    ========================================================================== */
 #navigation {
 	z-index: 2;
-	bottom: 77px;
+	bottom: 0px;
 	position: relative;
 	width: 700px;
 	height: 24px;
@@ -897,7 +897,7 @@ footer {
 	width: 64px;
 	height: 86px;
 	background-position: -0px -36px;
-	right: 25px;
+	right: 0px;
 	z-index: 1;
 	margin-top: 2px;
     margin-right: 1px;
