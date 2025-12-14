@@ -766,6 +766,8 @@ footer {
 	position: relative;
 	background: #92cbe4;
 	padding-top: 30px;
+	width: 100%;
+	min-width: 970px;
 }
 
 .social-sharing {
